@@ -1,12 +1,14 @@
 #pragma once
+#include <unistd.h>
 struct TriggerBot {
     ConfigLoader* cl;
     XDisplay* display;
     Level* level;
     LocalPlayer* localPlayer;
     std::vector<Player*>* players;
+    bool zoomdelay = false;
     const float TB_MAX_RANGE_ZOOMED = util::metersToGameUnits(250);
-    const float TB_MAX_RANGE_HIPFRE = util::metersToGameUnits(30);
+    const float TB_MAX_RANGE_HIPFRE = util::metersToGameUnits(20);
 
     TriggerBot(ConfigLoader* cl, XDisplay* display, Level* level, LocalPlayer* localPlayer, std::vector<Player*>* players) {
         this->cl = cl;
@@ -42,7 +44,22 @@ struct TriggerBot {
 
         //max range changes based on if we are zoomed in or not
         const float RANGE_MAX = (localPlayer->inZoom) ? TB_MAX_RANGE_ZOOMED : TB_MAX_RANGE_HIPFRE;
-
+	int delayseconds = 0;
+	if (weaponId == WEAPON_KRABER)
+	   delayseconds = 500000;
+        else if (weaponId == WEAPON_SENTINEL || weaponId == WEAPON_LONGBOW)
+           delayseconds = 400000;
+        else
+           delayseconds = 100000;
+           
+	if (localPlayer->inZoom && zoomdelay == false)
+	{
+	 usleep(delayseconds);
+	 zoomdelay = true;
+	}
+	if (!localPlayer->inZoom)
+	zoomdelay = false;      
+	     
         for (int i = 0; i < players->size(); i++) {
             Player* player = players->at(i);
             if (!player->isCombatReady()) continue;
