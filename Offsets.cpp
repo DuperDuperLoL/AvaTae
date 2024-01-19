@@ -3,7 +3,7 @@
  
     //core
    constexpr long OFF_REGION = 0x140000000;                      //[Static]->Region
-    constexpr long OFF_LEVEL = 0x16d6ac0;                         //[Miscellaneous]->LevelName
+    constexpr long OFF_LEVEL = 0x16d6ab0;                         //[Miscellaneous]->LevelName
     constexpr long OFF_LOCAL_PLAYER = 0x21615d8;                  //[Miscellaneous]->LocalPlayer
     constexpr long OFF_ENTITY_LIST = 0x1db2ed8;                   //[Miscellaneous]->cl_entitylist
     
@@ -31,7 +31,7 @@
     constexpr long OFF_WEAPON_DISCARDED = 0x15ac;                 //[RecvTable.DT_WeaponX]->m_discarded
     
     //Random
-    constexpr long OFF_NAMELIST = 0xc451fb0l;                      //[Miscellaneous]->NameList
+    constexpr long OFF_NAMELIST = 0xc5ea050;                      //[Miscellaneous]->NameList
     constexpr long OFF_YAW = 0x21fc - 0x8;                        //m_currentFramePlayer.m_ammoPoolCount - 0x8
     constexpr long OFF_NAMEINDEX = 0x38;        
     //glow
@@ -39,4 +39,4 @@
     constexpr long OFF_GLOW_THROUGH_WALL = 0x28C;                 //[DT_HighlightSettings].?
     constexpr long OFF_GLOW_FIX = 0x268;
     constexpr long OFF_GLOW_HIGHLIGHT_ID = 0x28C;                 //[DT_HighlightSettings].m_highlightServerActiveStates
-    constexpr long OFF_GLOW_HIGHLIGHTS = 0xB7A6050;		//0xB7A4E90
+    constexpr long OFF_GLOW_HIGHLIGHTS = 0xB93E050;		//0xB7A4E90
