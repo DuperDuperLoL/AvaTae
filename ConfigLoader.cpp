@@ -31,7 +31,7 @@ struct ConfigLoader {
     int AIMBOT_MIN_DISTANCE = 1;
 
     //sense
-    bool SENSE_ENEMY_COLOR_SHIELD_BASED = false;
+    bool SENSE_ENEMY_COLOR_SHIELD_BASED = true;
 
     float SENSE_ENEMY_VISIBLE_COLOR_RED = 3;
     float SENSE_ENEMY_VISIBLE_COLOR_GREEN = 0;
