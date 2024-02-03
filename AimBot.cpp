@@ -76,6 +76,8 @@ struct AimBot {
             weaponId == WEAPON_SENTINEL ||
             weaponId == WEAPON_LONGBOW ||
             weaponId == WEAPON_3030 ||
+            weaponId == WEAPON_WINGMAN ||
+            weaponId == WEAPON_NEMESIS ||
             weaponId == WEAPON_RE45);
 
         bool activatedByAttackingAndIsAttacking = cl->AIMBOT_ACTIVATED_BY_ATTACK && localPlayer->inAttack;
