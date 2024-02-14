@@ -20,7 +20,7 @@ sudo pacman -Sy base-devel libx11 libxtst
 
 ### 1. Download:
 ```
-git clone https://github.com/DuperDuperLoL/grinder.git
+git clone https://github.com/DuperDuperLoL/AvaTae.git
 ```
 
 ### 2. Get inside the folder
