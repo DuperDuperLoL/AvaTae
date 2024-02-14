@@ -1,6 +1,6 @@
 #pragma once
 struct ConfigLoader {
-    const std::string FILE_NAME = "grinder.ini";
+    const std::string FILE_NAME = "AvaTae.ini";
     std::vector<std::string>* lines = new std::vector<std::string>;
     long m_lastTimeFileEdited = 0;
 

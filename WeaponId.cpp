@@ -1,41 +1,41 @@
 #pragma once
-constexpr int WEAPON_HANDS = 114;
+constexpr int WEAPON_HANDS = 115;
 //Sniper ammo weapons
 constexpr int WEAPON_SENTINEL = 1;
 constexpr int WEAPON_CHARGE_RIFLE = 83;
 constexpr int WEAPON_LONGBOW = 85;
 //Shotgun ammo weapons
-constexpr int WEAPON_MOZAMBIQUE = 96;
-constexpr int WEAPON_EVA8 = 87;
-constexpr int WEAPON_PEACEKEEPER = 103;
-constexpr int WEAPON_MASTIFF = 95;
+constexpr int WEAPON_MOZAMBIQUE = 97;
+constexpr int WEAPON_PEACEKEEPER = 104;
+constexpr int WEAPON_MASTIFF = 96;
 //Light ammo weapons
-constexpr int WEAPON_P2020 = 105;
+constexpr int WEAPON_P2020 = 106;
 constexpr int WEAPON_RE45 = 81;
 constexpr int WEAPON_ALTERNATOR = 80;
-constexpr int WEAPON_R99 = 104;
+constexpr int WEAPON_R99 = 105;
 constexpr int WEAPON_R301 = 0;
-constexpr int WEAPON_SPITFIRE = 106;
-constexpr int WEAPON_G7 = 89;
+constexpr int WEAPON_SPITFIRE = 107;
+constexpr int WEAPON_G7 = 90;
 //Heavy ammo weapons
-constexpr int WEAPON_CAR = 112;
+constexpr int WEAPON_CAR = 113;
 constexpr int WEAPON_RAMPAGE = 21;
-constexpr int WEAPON_3030 = 111;
-constexpr int WEAPON_HEMLOCK = 90;
-constexpr int WEAPON_FLATLINE = 88;
+constexpr int WEAPON_3030 = 112;
+constexpr int WEAPON_HEMLOCK = 91;
+constexpr int WEAPON_FLATLINE = 89;
+constexpr int WEAPON_PROWLER = 102;
 //Energy ammo weapons
-constexpr int WEAPON_NEMESIS = 113;
-constexpr int WEAPON_VOLT = 110;
-constexpr int WEAPON_TRIPLE_TAKE = 107;
-constexpr int WEAPON_LSTAR = 93;
+constexpr int WEAPON_NEMESIS = 114;
+constexpr int WEAPON_VOLT = 111;
+constexpr int WEAPON_TRIPLE_TAKE = 108;
+constexpr int WEAPON_LSTAR = 94;
 constexpr int WEAPON_DEVOTION = 84;
 constexpr int WEAPON_HAVOC = 86;
 //Legendary ammo weapons
-constexpr int WEAPON_WINGMAN = 109; //Emotional damage! :)
-constexpr int WEAPON_PROWLER = 102;
+constexpr int WEAPON_WINGMAN = 110;
+constexpr int WEAPON_EVA8 = 88;
 constexpr int WEAPON_BOCEK = 2;
-constexpr int WEAPON_KRABER = 92;
-constexpr int WEAPON_THROWING_KNIFE = 159;
+constexpr int WEAPON_KRABER = 93;
+constexpr int WEAPON_THROWING_KNIFE = 166;
 
 
 // Define a reverse mapping from integer values to string names

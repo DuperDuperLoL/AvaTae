@@ -81,7 +81,7 @@ struct Sense {
             const GlowMode oldGlowMode = mem::Read<GlowMode>(highlightSettingsPtr + (highlightSize * highlightId) + 0, "Sense old oldGlowMode");
             if (newGlowModeShieldBased != oldGlowMode)
                 mem::Write<GlowMode>(highlightSettingsPtr + (highlightSize * highlightId) + 0, newGlowModeShieldBased);
-            Color newColor = { 5,10,5 };
+            Color newColor = { 0,10,0 };
             const Color oldColor = mem::Read<Color>(highlightSettingsPtr + (highlightSize * highlightId) + 4, "Sense old oldColor");
             if (oldColor != newColor)
                 mem::Write<Color>(highlightSettingsPtr + (highlightSize * highlightId) + 4, newColor);
