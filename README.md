@@ -3,17 +3,11 @@
 
 ## Intall build-essential / libx11-dev / libxtst-dev (Mandatory. You only need to do this once) !!!
 `
-sudo apt-get install build-essential libx11-dev libxtst-dev
-`
-</details>
-
-<details>
-<summary>Arch based dependencies</summary>
-
-## Intall base-devel / libx11 / libxtst (Mandatory. You only need to do this once) !!!
-`
-sudo pacman -Sy base-devel libx11 libxtst
-`
+sudo apt-get install -y libudev-dev
+sudo apt install cmake xorg-dev libglu1-mesa-dev libxrandr-dev libxinerama-dev libxcursor-dev libxi-dev
+sudo apt-get install build-essential
+sudo apt-get install libx11-dev
+sudo apt-get install libxtst-dev
 </details>
 
 
