@@ -1,0 +1,2 @@
+2024-03-29 22:48:55 - Script started
+2024-03-29 22:48:55 - Failed to copy binary: /home/chris/AvaTae/a to /tmp/563JnUonuvS98

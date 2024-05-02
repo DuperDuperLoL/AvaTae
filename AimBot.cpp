@@ -78,7 +78,20 @@ struct AimBot {
             weaponId == WEAPON_3030 ||
             weaponId == WEAPON_WINGMAN ||
             weaponId == WEAPON_NEMESIS ||
+            weaponId == WEAPON_BOCEK ||
+            weaponId == WEAPON_PEACEKEEPER ||
+            weaponId == WEAPON_MASTIFF ||
             weaponId == WEAPON_RE45);
+            
+         bool WeaponADSauto = (
+            weaponId == WEAPON_RAMPAGE ||
+            weaponId == WEAPON_HEMLOCK ||
+            weaponId == WEAPON_PROWLER ||
+            weaponId == WEAPON_P2020 ||
+            weaponId == WEAPON_MOZAMBIQUE ||
+            weaponId == WEAPON_EVA8 ||
+            weaponId == WEAPON_BOCEK ||
+            weaponId == WEAPON_WINGMAN);
 
         bool activatedByAttackingAndIsAttacking = cl->AIMBOT_ACTIVATED_BY_ATTACK && localPlayer->inAttack;
         bool activatedByADSAndIsADSing = cl->AIMBOT_ACTIVATED_BY_ADS && localPlayer->inZoom;
@@ -88,7 +101,7 @@ struct AimBot {
             && !weaponDiscarded
             && weaponCanBeAimbotted
             && (activatedByAttackingAndIsAttacking
-                || activatedByADSAndIsADSing
+                || (activatedByADSAndIsADSing && WeaponADSauto)
                 || activatedByButtonAndButtonIsDown);
         return active;
     }
