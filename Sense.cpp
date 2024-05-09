@@ -44,7 +44,7 @@ struct Sense {
                 cl->SENSE_ENEMY_INVISIBLE_BODY_STYLE,
                 cl->SENSE_ENEMY_INVISIBLE_BORDER_STYLE,
                 cl->SENSE_ENEMY_INVISIBLE_BORDER_WIDTH,
-                100
+                127
             };
             const GlowMode oldGlowMode = mem::Read<GlowMode>(highlightSettingsPtr + (highlightSize * highlightId) + 0, "Sense old oldGlowMode");
             if (newGlowMode != oldGlowMode)
@@ -139,11 +139,14 @@ struct Sense {
         }
 
         //item highlights
-        for (int highlightId = 30; highlightId < 40; highlightId++) {
-            const GlowMode newGlowMode = { 137,0,0,127 };
-            const GlowMode oldGlowMode = mem::Read<GlowMode>(highlightSettingsPtr + (highlightSize * highlightId) + 0, "Sense old oldGlowMode");
-            if (newGlowMode != oldGlowMode)
-            mem::Write<GlowMode>(highlightSettingsPtr + (highlightSize * highlightId) + 0, newGlowMode);
+        for (int highlightId = 9; highlightId <= 70; highlightId++) {
+            if(highlightId !=55)
+            {
+            	const GlowMode newGlowMode = { 137,0,0,127 };
+            	const GlowMode oldGlowMode = mem::Read<GlowMode>(highlightSettingsPtr + (highlightSize * highlightId) + 0, "Sense old oldGlowMode");
+            	if (newGlowMode != oldGlowMode)
+            	mem::Write<GlowMode>(highlightSettingsPtr + (highlightSize * highlightId) + 0, newGlowMode);
+            }
         }
     }
 

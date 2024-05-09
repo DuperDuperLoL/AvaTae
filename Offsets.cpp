@@ -3,13 +3,13 @@
  
     //core
     constexpr long OFF_REGION = 0x140000000;                      //[Static]->Region
-    constexpr long OFF_LEVEL = 0x16f94f0;                         //[Miscellaneous]->LevelName
-    constexpr long OFF_LOCAL_PLAYER = 0x21830f8;                  //[Miscellaneous]->LocalPlayer
-    constexpr long OFF_ENTITY_LIST = 0x1DD45F8;                   //[Miscellaneous]->cl_entitylist
+    constexpr long OFF_LEVEL = 0x17c5120;                         //[Miscellaneous]->LevelName
+    constexpr long OFF_LOCAL_PLAYER = 0x2258688;                  //[Miscellaneous]->LocalPlayer
+    constexpr long OFF_ENTITY_LIST = 0x1EA9AE8;                   //[Miscellaneous]->cl_entitylist
     
     //buttons
-    constexpr long OFF_IN_ATTACK = 0x073f2c18;                     //[Buttons]->in_attack
-    constexpr long OFF_IN_JUMP = 0x073f2cf8;                       //[Buttons]->in_jump
+    constexpr long OFF_IN_ATTACK = 0x074dc020;                     //[Buttons]->in_attack
+    constexpr long OFF_IN_JUMP = 0x074dc138;                       //[Buttons]->in_jump
     
     // player
     constexpr long OFF_ZOOMING = 0x1bd1;                          //[RecvTable.DT_Player]->m_bZooming
@@ -31,7 +31,7 @@
     constexpr long OFF_WEAPON_DISCARDED = 0x1599;                 //[RecvTable.DT_WeaponX]->m_discarded
     
     //Random
-    constexpr long OFF_NAMELIST = 0xC5FF080;                      //[Miscellaneous]->NameList
+    constexpr long OFF_NAMELIST = 0x0C78F030;                      //[Miscellaneous]->NameList
     constexpr long OFF_YAW = 0x223c - 0x8;                        //m_currentFramePlayer.m_ammoPoolCount - 0x8
     constexpr long OFF_NAMEINDEX = 0x38;        
     //glow
@@ -39,4 +39,4 @@
     constexpr long OFF_GLOW_THROUGH_WALL = 0x26c;                 //[DT_HighlightSettings].?
     constexpr long OFF_GLOW_FIX = 0x268;
     constexpr long OFF_GLOW_HIGHLIGHT_ID = 0x28C;                 //[DT_HighlightSettings].m_highlightServerActiveStates
-    constexpr long OFF_GLOW_HIGHLIGHTS = 0xBB247D0;		//0xB7A4E90
+    constexpr long OFF_GLOW_HIGHLIGHTS = 0xADE39C0;		//0xB7A4E90
