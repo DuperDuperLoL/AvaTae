@@ -116,7 +116,7 @@ struct Player {
         if (glowEnable != 1) mem::Write<int>(base + OFF_GLOW_ENABLE, 1);
         if (glowThroughWall != 2) mem::Write<int>(base + OFF_GLOW_THROUGH_WALL, 2);
         if (glowThroughWall != 2) mem::Write<int>(base + OFF_GLOW_FIX, 2);
-        int id = 95;
+        int id = 8;
         if (highlightId != id) mem::Write<int>(base + OFF_GLOW_HIGHLIGHT_ID + 0, id);
     }
 
@@ -134,11 +134,11 @@ struct Player {
         if (glowThroughWall != 2) mem::Write<int>(base + OFF_GLOW_THROUGH_WALL, 2);
         if (glowThroughWall != 2) mem::Write<int>(base + OFF_GLOW_FIX, 2);
         int id;
-        if (currentShields <= 0) id = 90;//no shields
-        else if (currentShields <= 50) id = 91;//white shields 
-        else if (currentShields <= 75) id = 92;//blue shields
-        else if (currentShields <= 100) id = 93;//purple shields / gold
-        else  id = 94;//red shields
+        if (currentShields <= 0) id = 3;//no shields
+        else if (currentShields <= 50) id = 4;//white shields 
+        else if (currentShields <= 75) id = 5;//blue shields
+        else if (currentShields <= 100) id = 6;//purple shields / gold
+        else  id = 7;//red shields
         if (highlightId != id) mem::Write<int>(base + OFF_GLOW_HIGHLIGHT_ID + 0, id);
     }
 
